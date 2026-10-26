@@ -10,7 +10,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const BASE = (process.env.BASE_URL || 'http://localhost:3000').replace(/\/$/, '');
-const HOST = (process.env.OG_HOST || 'renerangel.dev').trim();
+const HOST = (process.env.OG_HOST || 'renerangel.netlify.app').trim();
 const OUT = path.resolve('public/og');
 
 const cards = {

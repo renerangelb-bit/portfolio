@@ -20,7 +20,7 @@ export const profile = {
   github: { label: 'github.com/renerangelb-bit', href: 'https://github.com/renerangelb-bit' },
   nexa: 'https://nexastudiohq.com',
   /** Public URL of this site, without a trailing slash. Override with NEXT_PUBLIC_SITE_URL. */
-  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://renerangel.dev').replace(/\/$/, ''),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://renerangel.netlify.app').replace(/\/$/, ''),
   /** Repository of this site, linked in the footer. */
   sourceUrl: 'https://github.com/renerangelb-bit/portfolio',
   /** Set to false to hide the availability line everywhere. */

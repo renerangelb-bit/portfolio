@@ -42,7 +42,7 @@ El CV debe quedar en **una página**. Si el script avisa que son dos, recorta un
 
 ## Publicar por primera vez
 
-1. **Dominio.** Compra `renerangel.dev` en Cloudflare Registrar (alrededor de 12 USD al año). Si prefieres esperar, Netlify te da una dirección gratis tipo `renerangel.netlify.app`; en ese caso, en Netlify agrega la variable `NEXT_PUBLIC_SITE_URL=https://renerangel.netlify.app` y vuelve a generar el CV y las imágenes con `OG_HOST=renerangel.netlify.app npm run og`, porque el CV imprime la dirección del sitio.
+1. **Dirección.** El sitio vive gratis en `https://renerangel.netlify.app` (Netlify). Si ese nombre ya está ocupado y eliges otro, cambia `url` en `src/content/profile.ts` (o la variable `NEXT_PUBLIC_SITE_URL` en Netlify) y vuelve a generar el CV y las imágenes con `OG_HOST=<tu-nombre>.netlify.app npm run og`, porque el CV imprime la dirección del sitio. Más adelante, si compras un dominio propio (por ejemplo `renerangel.dev`), se conecta en Netlify en Domain management y se cambia la misma línea.
 2. **GitHub.** Crea un repositorio público llamado `portfolio` en tu cuenta `renerangelb-bit` (el pie de página enlaza a `github.com/renerangelb-bit/portfolio`) y sube el proyecto:
    ```bash
    git init
@@ -53,12 +53,12 @@ El CV debe quedar en **una página**. Si el script avisa que son dos, recorta un
    git push -u origin main
    ```
 3. **Netlify.** Add new site → Import from Git → elige el repositorio. Netlify lee `netlify.toml`, no hay que configurar nada más.
-4. **Dominio en Netlify.** Domain management → Add a domain → `renerangel.dev`, y sigue las instrucciones de DNS. El HTTPS se activa solo.
+4. **Nombre del sitio en Netlify.** Site configuration → Change site name → `renerangel`. Así la dirección queda `renerangel.netlify.app`, con HTTPS incluido.
 5. **Comprueba** que abren `/`, `/es`, los dos casos, `/cv` y que el botón "Download CV (PDF)" descarga el archivo.
 
 ## Después de publicar
 
-- Pon `renerangel.dev` en LinkedIn (sección Contacto y en el titular o "Destacado"), en tu perfil de GitHub y en tu firma de correo.
+- Pon `renerangel.netlify.app` en LinkedIn (sección Contacto y en el titular o "Destacado"), en tu perfil de GitHub y en tu firma de correo.
 - Cambia la biografía de GitHub para que coincida: "Full-stack developer. React, Next.js, TypeScript, Node.js, SQL." (hoy dice "React & Java Spring Boot").
 - Usa `docs/github-profile-README.md` como README de tu perfil de GitHub (repositorio `renerangelb-bit/renerangelb-bit`).
 

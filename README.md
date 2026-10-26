@@ -2,7 +2,7 @@
 
 My personal site: who I am, the projects I've built and my CV, in English and Spanish.
 
-**Live:** [renerangel.dev](https://renerangel.dev) · **CV:** [English PDF](public/cv/Rene-Rangel-CV-EN.pdf), [Spanish PDF](public/cv/Rene-Rangel-CV-ES.pdf)
+**Live:** [renerangel.netlify.app](https://renerangel.netlify.app) · **CV:** [English PDF](public/cv/Rene-Rangel-CV-EN.pdf), [Spanish PDF](public/cv/Rene-Rangel-CV-ES.pdf)
 
 I'm a full-stack developer in Aguascalientes, Mexico, working with React, Next.js, TypeScript, Node.js and SQL. I'm available for a full-time role, remote or on site. Email: [renerangelb@gmail.com](mailto:renerangelb@gmail.com).
 
